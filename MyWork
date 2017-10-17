@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+	<title>程天煜</title>
+
+<style type="text/css">
+	div{
+		width:800px;
+		height:640px;
+		background:#FE0000;
+		margin:0 auto;
+		text-align:center;
+		font-size:45px;
+		position:relative;
+	}
+	div.left{
+		width:400px;
+		height:320px;
+		background:#FFFFFF;
+		position:absolute;
+		top:160px;
+		left:0px;
+		}
+	div.right{
+		width:400px;
+		height:320px;
+		background:#000000;
+		position:absolute;
+		top:160px;
+		left:400px;
+		color:#FFFFFF;
+		}
+	p{
+		width:800px;
+		height:160px;
+		background:#008001;		
+		position:absolute;
+		top:435px;
+		left:0px
+	}
+	
+</style>
+</head>
+<body>
+	<div>
+		header
+		<div class="left">middle-left</div>
+		<div class="right">middle-right</div>
+		<p>foot</p>
+	</div>
+</body>
+
+</html>
