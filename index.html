@@ -1,55 +1,76 @@
-<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
-	<title>程天煜</title>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	*{padding:0;margin:0}
+	body{font-size:14px;font-family:"微软雅黑";}
+	a{text-decoration:none;color:#333}
+	ul li{list-style:none;}
+  </style>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1451657658_823909.css"/>
+ </head>
+ <body>
 
-<style type="text/css">
-	div{
-		width:800px;
-		height:640px;
-		background:#FE0000;
-		margin:0 auto;
-		text-align:center;
-		font-size:45px;
-		position:relative;
-	}
-	div.left{
-		width:400px;
-		height:320px;
-		background:#FFFFFF;
-		position:absolute;
-		top:160px;
-		left:0px;
+	<style>
+		.header{background:#111;height:56px;position:relative;z-index:1}
+		.header .wrap{width:1180px;height:56px;margin:0 auto;}
+		.header .wrap li{height:56px;float:left;line-height:56px;}
+		.header .wrap li a{color:#fff;border-right:1px solid #fff;display:block;padding:0 30px;}
+		.header .wrap li:first-child a{border-left:1px solid #fff;}
+		/*
+			n+1就是从0开始 n就是从1开始
+			li:nth-child(2n)这里n是从1开始
+			li:nth-child(2n+1)这里n是从0开始
+			:hover 除法和改变下面的子元素
+		*/
+		.header .wrap li:hover ul{display:block;}
+		.header .wrap li ul{display:none;}
+		.header .wrap li ul li a{border-right:1px solid #fff;border-left:1px solid #fff;}
+		.header .wrap li ul li{float:none;background:#111;}
+		#top{width:60px;height:60px;background:#111;position:fixed;
+			bottom:20px;right:20px;
+			text-align:center;
+			line-height:60px;
+			cursor:pointer;
+			display:none;
 		}
-	div.right{
-		width:400px;
-		height:320px;
-		background:#000000;
-		position:absolute;
-		top:160px;
-		left:400px;
-		color:#FFFFFF;
-		}
-	p{
-		width:800px;
-		height:160px;
-		background:#008001;		
-		position:absolute;
-		top:435px;
-		left:0px
-	}
+		#top:hover{background:green;}
+		#top .iconfont{color:#fff;font-size:28px;}
+	</style>
+
 	
-</style>
-</head>
-<body>
-	<div>
-		header
-		<div class="left">middle-left</div>
-		<div class="right">middle-right</div>
-		<p>foot</p>
+	
+	<div class="header">
+		<div class="wrap">
+			<ul>
+				<li>
+					<a href="#">1</a>
+					<ul>
+						<li><a href="#">12</a></li>
+						<li><a href="#">13</a></li>
+						<li><a href="#">14</a></li>
+					</ul>
+				</li>
+				<li><a href="#">2</a><ul>
+						<li><a href="#">22</a></li>
+						<li><a href="#">23</a></li>
+						<li><a href="#">24</a></li>
+					</ul></li>
+				<li><a href="#">3</a></li>	
+				<li><a href="#">4</a></li>	
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a><ul>
+						<li><a href="#">71</a></li>
+						<li><a href="#">72</a></li>
+						<li><a href="#">73</a></li>
+					</ul></li>
+			</ul>
+		</div>
 	</div>
-	<a href="Cty98.github.io/MyWork.html" target="_blank">显示的文字</a> 
-
-</body>
-
-</html>
+	<div>
+	
